@@ -21,11 +21,11 @@ export class HerosComponent {
     this.getHeros();
   }
 
-  onSelect(hero: Hero): void{
-    this.selectedHero = hero;
-    console.log(this.selectedHero); 
-    this.messageService.add(`HeroesComponent: selected hero id = ${hero.id}`);
-  }
+  // onSelect(hero: Hero): void{
+  //   this.selectedHero = hero;
+  //   console.log(this.selectedHero); 
+  //   this.messageService.add(`HeroesComponent: selected hero id = ${hero.id}`);
+  // }
  
   getHeros(): void{
     this.heroService.getHeroes()
